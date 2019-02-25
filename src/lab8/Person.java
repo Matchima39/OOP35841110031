@@ -4,9 +4,15 @@ public class Person {
     //class properties
     private String pID;
     private String name;
+    private String yearBorn;
 
 
     //constructor
+    public void introduce(){
+        System.out.println("My name is" +this.name+",");
+        System.out.println("I was born "+this.yearBorn);
+    }
+
     public Person(String pID, String name) {
         this.pID = pID;
         this.name = name;
@@ -36,4 +42,5 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
+
 }
